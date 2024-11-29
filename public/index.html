@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Info</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 20px;
+      }
+      header {
+        background-color: #0078d7;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+      section {
+        background: white;
+        padding: 20px;
+        margin: 20px auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+      }
+      footer {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 0.9rem;
+        color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to the User Info Page</h1>
+    </header>
+    <section id="data">
+      <h2>Your Details</h2>
+      <p><strong>IP Address:</strong> ${userInfo.ip}</p>
+      <p><strong>User Agent:</strong> ${userInfo.userAgent}</p>
+      <p><strong>Request Method:</strong> ${userInfo.method}</p>
+      <p><strong>URL Accessed:</strong> ${userInfo.url}</p>
+      <h3>Headers</h3>
+      <pre>${JSON.stringify(userInfo.headers, null, 2)}</pre>
+    </section>
+    <footer>
+      &copy; 2024 User Info Website
+    </footer>
+  </body>
+</html>

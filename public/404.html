@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #0078d7;
+      color: white;
+      padding: 1rem 0;
+    }
+    main {
+      padding: 2rem;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 1rem 0;
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+    }
+  </style>
+  <script> 
+	$(function(){
+	  $("#header").load("header.html"); 
+	  $("#footer").load("footer.html"); 
+	});
+</script> 
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Website</h1>
+  </header>
+  <main>
+    <p>Error 404</p>
+  </main>
+  <footer>
+    <p>&copy; 2024 My Website</p>
+  </footer>
+</body>
+</html>
